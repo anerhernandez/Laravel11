@@ -28,6 +28,16 @@ class TaskSeeder extends Seeder
             'description' => 'Descripción para tarea 3',
             'user_id' => 1
           ]);
+          DB::table('tasks')->insert([
+            'title' => 'Tarea furbo',
+            'description' => 'Furbo',
+            'user_id' => 2
+          ]);
+          DB::table('tasks')->insert([
+            'title' => 'Tarea gambling',
+            'description' => 'Gambling',
+            'user_id' => 2
+          ]);
           
     }
 }
